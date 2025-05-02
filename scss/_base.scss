@@ -1,0 +1,80 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+/* Base styles for HR Zone */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: $font-size-base;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-inter;
+  color: $text-color;
+  line-height: 1.6;
+  background-color: $bg-light;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-poppins;
+  margin-bottom: $spacing-md;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: $font-size-xxl;
+}
+
+h2 {
+  font-size: $font-size-xl;
+  margin-bottom: $spacing-lg;
+  text-align: center;
+}
+
+h3 {
+  font-size: $font-size-lg;
+}
+
+p {
+  margin-bottom: $spacing-md;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  @include container;
+}
+
+section {
+  @include section-spacing;
+}

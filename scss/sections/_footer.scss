@@ -1,0 +1,55 @@
+/* Footer styles */
+
+footer {
+  background-color: $bg-dark;
+  color: $light-text;
+  padding: $spacing-xl 0;
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: $spacing-lg;
+    margin-bottom: $spacing-xl;
+
+    .footer-column {
+      h3 {
+        color: $light-text;
+        font-size: $font-size-base;
+        margin-bottom: $spacing-md;
+        position: relative;
+
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: -10px;
+          left: 0;
+          width: 40px;
+          height: 2px;
+          background-color: $accent-color;
+        }
+      }
+
+      ul {
+        li {
+          margin-bottom: $spacing-sm;
+
+          a {
+            font-size: $font-size-sm;
+            transition: color 0.3s ease;
+
+            &:hover {
+              color: $accent-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    font-size: $font-size-sm;
+    border-top: 1px solid rgba($light-text, 0.1);
+    padding-top: $spacing-lg;
+  }
+}

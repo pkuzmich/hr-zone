@@ -1,0 +1,21 @@
+{
+  "name": "hr-zone",
+  "version": "1.0.0",
+  "description": "HR Zone - Prostor pro sdílení zkušeností a inspirace v oblasti HR",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm-run-all --parallel watch serve",
+    "serve": "live-server --port=3000",
+    "watch": "less-watch-compiler less css main.less --source-map",
+    "build": "lessc less/main.less css/main.css --source-map"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "less": "^4.2.0",
+    "less-watch-compiler": "^1.16.3",
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.69.5"
+  }
+}

@@ -1,0 +1,40 @@
+.features {
+  background-color: @bg-light;
+
+  &__title {
+    font-family: @font-poppins;
+    font-size: 38px;
+    font-weight: 500;
+    color: @primary-color;
+  }
+}
+
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+.feature-card {
+  background-color: @white-color;
+  border-radius: @border-radius-lg;
+  padding: 20px;
+}
+
+.feature-card--1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.feature-card--2 {
+  grid-area: 1 / 2 / 2 / 4;
+}
+
+.feature-card--3 {
+  grid-area: 1 / 4 / 3 / 5;
+}
+
+.feature-card--4 {
+  grid-area: 2 / 1 / 3 / 4;
+}

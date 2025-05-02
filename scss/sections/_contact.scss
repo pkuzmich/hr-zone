@@ -1,0 +1,27 @@
+/* Contact section styles */
+
+.contact {
+  background-color: $bg-light;
+
+  h2 {
+    margin-bottom: $spacing-xl;
+  }
+
+  .form-group {
+    &:last-of-type {
+      display: flex;
+      align-items: center;
+
+      label {
+        margin-right: $spacing-md;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  button[type="submit"] {
+    padding: $spacing-sm $spacing-xl;
+    font-weight: 600;
+    margin-top: $spacing-lg;
+  }
+}

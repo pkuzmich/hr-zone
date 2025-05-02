@@ -1,0 +1,49 @@
+/* Intro section styles */
+
+.intro {
+  color: @primary-color;
+  padding: 70px 0;
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .intro-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .intro-content {
+    max-width: 450px;
+    padding-top: 2.5rem;
+
+    &__title {
+      font-family: @font-poppins;
+      font-weight: 500;
+      font-size: 105px;
+      margin-bottom: 0;
+    }
+
+    &__description {
+      font-size: 29px;
+      margin-bottom: 50px;
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .intro-image {
+    flex: 0 0 55%;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}

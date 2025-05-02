@@ -1,0 +1,20 @@
+/* Button styles */
+
+.btn-primary {
+  .button(@primary-color, @white-color, @pink-color);
+
+  &--large {
+    padding: @spacing-md @spacing-lg;
+    width: 210px;
+  }
+}
+
+.btn-secondary {
+  .button(transparent, @text-color, fade(@primary-color, 10%));
+  font-weight: 400;
+}
+
+// .btn-large {
+//   .button(@primary-color, @white-color, fade(@pink-color, 10%));
+//   padding: @spacing-md @spacing-xl;
+// }

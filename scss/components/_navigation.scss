@@ -1,0 +1,51 @@
+/* Navigation styles */
+
+nav {
+  @include flex(row, space-between, center);
+  padding: $spacing-md 0;
+
+  .menu {
+    @include flex(row, center, center);
+
+    @include responsive(md) {
+      display: flex;
+    }
+
+    @media (max-width: $breakpoint-md - 1px) {
+      display: none;
+    }
+
+    li {
+      margin: 0 $spacing-md;
+
+      a {
+        color: $primary-color;
+        font-weight: 500;
+        position: relative;
+
+        &:after {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 2px;
+          bottom: -5px;
+          left: 0;
+          background-color: $accent-color;
+          transition: width 0.3s ease;
+        }
+
+        &:hover:after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .auth-buttons {
+    @include flex(row, center, center);
+
+    a {
+      margin-left: $spacing-md;
+    }
+  }
+}

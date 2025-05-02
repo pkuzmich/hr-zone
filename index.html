@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HR zóna - Prostor pro sdílení zkušeností a inspirace v oblasti HR</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="background-container">
+      <header class="header">
+        <div class="container">
+          <nav>
+            <div class="logo">
+              <img src="images/logo.png" alt="HR zóna" width="215" height="74" />
+            </div>
+            <div class="mobile-menu-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="menu">
+              <li><a href="#" data-text="Domů" class="active">Domů</a></li>
+              <li><a href="#" data-text="O nás">O nás</a></li>
+              <li><a href="#" data-text="HR zdroje">HR zdroje</a></li>
+              <li><a href="#" data-text="Kontakt">Kontakt</a></li>
+            </ul>
+            <div class="auth-buttons">
+              <a href="#" class="btn-secondary">Přihlásit se</a>
+              <a href="#" class="btn-primary">Zaregistrovat se</a>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section class="intro">
+        <div class="container intro-container">
+          <div class="intro-content">
+            <h1 class="intro-content__title">HR zóna</h1>
+            <p class="intro-content__description">Prostor pro sdílení zkušeností a inspirace v oblasti HR</p>
+            <div class="intro-content__buttons">
+              <a href="#" class="btn-primary btn-primary--large">Vytvořit účet</a>
+            </div>
+          </div>
+          <div class="intro-image">
+            <img src="images/intro-image.png" alt="HR Zóna Application Preview" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="features">
+      <div class="container">
+        <h2 class="features__title">Všechny HR zdroje na jednom místě</h2>
+
+        <div class="feature-cards">
+          <div class="feature-card feature-card--1">
+            <div class="icon"><i class="fas fa-file-alt"></i></div>
+            <h3>Odborné články</h3>
+            <p>Aktuální trendy, případové studie a praktické návody pro Vaši každodenní HR praxi</p>
+          </div>
+
+          <div class="feature-card feature-card--2">
+            <div class="icon"><i class="fas fa-users"></i></div>
+            <h3>Sdílení zkušeností</h3>
+            <p>
+              Učte se z praxe ostatních. Využijte reálné příklady, osvědčené postupy a rady od HR kolegů, kteří už
+              podobné situace úspěšně zvládli.
+            </p>
+          </div>
+
+          <div class="feature-card feature-card--3">
+            <div class="icon"><i class="fas fa-calendar-alt"></i></div>
+            <h3>Webináře a konference</h3>
+            <p>Pozvánky na zajímavé eventy, živá online setkání a videozáznamy z proběhlých akcí</p>
+            <div class="image-container">
+              <img src="images/conference.png" alt="Webináře a konference" />
+            </div>
+          </div>
+
+          <div class="feature-card feature-card--4">
+            <div class="icon"><i class="fas fa-comment-dots"></i></div>
+            <h3>Diskusní fórum a komunita</h3>
+            <p>
+              Ptejte se, sdílejte a spojte se s dalšími HR profesionály. Místo, kde se řeší reálné situace a navazují
+              kontakty.
+            </p>
+            <div class="image-container">
+              <img src="images/hr_zone_lg.png" alt="HR Zóna logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  <section class="community">
+      <div class="container">
+        <h2>Komunita českých personalistů a HR</h2>
+        <p>
+          HR spojuje. V komunitě HR Zóny potkáte personalisty z různých oborů. Můžete od nich čerpat zkušenosti, vzájemně
+          se inspirujete a objevíte nové způsoby práce.
+        </p>
+
+        <div class="community-images">
+        </div>
+      </div>
+    </section>
+
+    <section class="app-promotion">
+      <div class="container">
+        <div class="app-info">
+          <h2>Připojte se do HR Zóny kdykoliv a odkudkoliv</h2>
+          <p>Díky našim mobilním aplikacím. Vše, co potřebujete, máte přímo v ruce.</p>
+          <div class="app-buttons">
+            <a href="#" class="google-play">
+              <img src="images/google-play.png" alt="Google Play" />
+            </a>
+            <a href="#" class="app-store">
+              <img src="images/app-store.png" alt="App Store" />
+            </a>
+          </div>
+        </div>
+        <div class="app-image">
+          <img src="images/mobile-app.png" alt="HR Zóna Mobile App" />
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="circle-decoration">
+          <h2>Všechny HR zdroje na jednom místě</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="registration">
+      <div class="container">
+        <h2>Ještě nejste v HR Zóně?</h2>
+        <p>Stačí se jen registrovat. HR Zóna je pro Vás nyní zdarma!</p>
+        <a href="#" class="btn-primary">Vytvořit účet</a>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <h2>Napište nám</h2>
+        <form>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="vas@email.cz" />
+          </div>
+          <div class="form-group">
+            <label for="message">Zpráva</label>
+            <textarea id="message" placeholder="Vaše zpráva..."></textarea>
+          </div>
+          <div class="form-group">
+            <label for="gdpr">Souhlas</label>
+            <input type="checkbox" id="gdpr" />
+            <span>Souhlasím s podmínkami GDPR</span>
+          </div>
+          <button type="submit" class="btn-primary">Odeslat</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Kvalita webových stránek</h3>
+            <ul>
+              <li><a href="#">Ochrana údajů</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Zdroj a provozovatel webstránky</h3>
+            <ul>
+              <li><a href="#">O nás</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Tipy na komunikaci a povely</h3>
+            <ul>
+              <li><a href="#">Nápověda</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Pravidlela používání služeb</h3>
+            <ul>
+              <li><a href="#">Podmínky užití</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>© 2025 HR Zóna. Všechna práva vyhrazena.</p>
+        </div>
+      </div>
+    </footer> -->
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

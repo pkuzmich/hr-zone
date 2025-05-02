@@ -1,0 +1,30 @@
+/* Registration section styles */
+
+.registration {
+  background: linear-gradient(135deg, $secondary-color, $accent-color);
+  color: $light-text;
+  text-align: center;
+  padding: $spacing-xl 0;
+
+  h2 {
+    color: $light-text;
+  }
+
+  p {
+    max-width: 600px;
+    margin: 0 auto $spacing-lg;
+    font-size: $font-size-lg;
+  }
+
+  .btn-primary {
+    background-color: $light-text;
+    color: $secondary-color;
+    font-weight: 600;
+    padding: $spacing-sm $spacing-xl;
+    font-size: $font-size-lg;
+
+    &:hover {
+      background-color: "teal";
+    }
+  }
+}
