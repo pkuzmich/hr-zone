@@ -10,6 +10,36 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 
+  // Initialize Slick slider
+  if (jQuery && $('.community-slider').length) {
+    $('.community-slider').slick({
+      arrows: true,
+      infinite: true,
+      speed: 500,
+      centerMode: true,
+      centerPadding: '15%',
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            centerPadding: '10%'
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            centerMode: true,
+            centerPadding: '5%'
+          }
+        }
+      ]
+    });
+  }
+
   // Smooth scrolling for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
