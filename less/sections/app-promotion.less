@@ -1,0 +1,51 @@
+.app-promotion {
+	color: @white-color;
+
+  &__container {
+		background-color: @primary-color;
+    display: flex;
+		flex-direction: column;
+		gap: 3rem;
+		padding: @spacing-md @spacing-lg;
+		border-radius: @border-radius;
+
+		@media (min-width: @breakpoint-sm) {
+			flex-direction: row;
+		}
+  }
+}
+
+.app-image {
+	flex-shrink: 0;
+	margin-top: -3rem;
+	margin-bottom: -4rem;
+	display: grid;
+	place-items: center;
+
+	@media (min-width: @breakpoint-sm) {
+		flex: 1 0 40%;
+	}
+}
+
+.app-info {
+  &__title {
+    font-size: 50px;
+		font-family: @font-raleway;
+    font-weight: 700;
+
+		@media (min-width: @breakpoint-sm) {
+			font-size: 30px;
+		}
+  }
+
+  &__description {
+    font-size: 24px;
+		font-family: @font-raleway;
+    font-weight: 400;
+
+		@media (min-width: @breakpoint-sm) {
+			font-size: 18px;
+		}
+  }
+}
+
