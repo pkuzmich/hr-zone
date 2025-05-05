@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
       loop: true,
       speed: 500,
       autoplay: {
-        delay: 500000,
+        delay: 5000,
         disableOnInteraction: false,
       },
       navigation: {
