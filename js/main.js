@@ -10,34 +10,33 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 
-  // Initialize Slick slider
-  if (jQuery && $('.community-slider').length) {
-    $('.community-slider').slick({
-      arrows: true,
-      infinite: true,
+  // Initialize Swiper
+  if (document.querySelector('.community-slider')) {
+    const swiper = new Swiper('.community-slider', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      centeredSlides: true,
+      loop: true,
       speed: 500,
-      centerMode: true,
-      centerPadding: '15%',
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            centerPadding: '10%'
-          }
+      autoplay: {
+        delay: 500000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        600: {
+          slidesPerView: 'auto',
+          spaceBetween: 20,
         },
-        {
-          breakpoint: 600,
-          settings: {
-            centerMode: true,
-            centerPadding: '5%'
-          }
+        1024: {
+          slidesPerView: 'auto',
+          spaceBetween: 30,
         }
-      ]
-    });
+      }
+    })
   }
 
   // Smooth scrolling for anchor links

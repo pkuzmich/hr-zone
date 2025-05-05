@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HR zóna - Prostor pro sdílení zkušeností a inspirace v oblasti HR</title>
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body>
     <div class="background-container">
@@ -102,28 +101,42 @@
     </section>
     <section class="community">
       <div class="container">
-        <h2>Komunita českých personalistů a HR</h2>
-        <p>
+        <h2 class="community__title">Komunita českých personalistů a HR</h2>
+        <p class="community__description">
           <strong>HR spojuje.</strong> V komunitě HR Zóny potkáte personalisty z různých oborů, získáte od nich cenné
           zkušenosti, vzájemně se inspirujete a objevíte nové profesní příležitosti.
         </p>
-        <div class="community-images">
-          <div class="community-slider">
-            <div class="slider-item">
-              <img src="images/community-1.jpg" alt="HR komunita 1" />
+        <div class="community__images">
+          <div class="swiper community-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="image-container">
+                  <img src="images/community-1.jpg" alt="HR komunita 1" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-container">
+                  <img src="images/community-1.jpg" alt="HR komunita 2" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-container">
+                  <img src="images/community-1.jpg" alt="HR komunita 3" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-container">
+                  <img src="images/community-1.jpg" alt="HR komunita 4" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-container">
+                  <img src="images/community-1.jpg" alt="HR komunita 5" />
+                </div>
+              </div>
             </div>
-            <div class="slider-item">
-              <img src="images/community-1.jpg" alt="HR komunita 2" />
-            </div>
-            <div class="slider-item">
-              <img src="images/community-1.jpg" alt="HR komunita 3" />
-            </div>
-            <div class="slider-item">
-              <img src="images/community-1.jpg" alt="HR komunita 4" />
-            </div>
-            <div class="slider-item">
-              <img src="images/community-1.jpg" alt="HR komunita 5" />
-            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
       </div>
@@ -227,7 +240,7 @@
       <div class="contact-background">&nbsp;</div>
     </section>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
