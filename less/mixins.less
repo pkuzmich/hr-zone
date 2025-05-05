@@ -52,7 +52,7 @@
 // Container mixin
 .container() {
   width: 100%;
-  max-width: 1230px;
+  max-width: calc(1230px + @spacing-md * 2);
   margin: 0 auto;
   padding: 0 @spacing-md;
 }
@@ -60,8 +60,8 @@
 .solid-effect() {
   border-radius: @border-radius;
   border-radius: 10px;
-	border: 1px solid @white-color;
-	background: linear-gradient(122deg, @white-color 0%, #FAFDFF 96.81%);
+  border: 1px solid @white-color;
+  background: linear-gradient(122deg, @white-color 0%, #fafdff 96.81%);
 }
 
 // Section spacing
