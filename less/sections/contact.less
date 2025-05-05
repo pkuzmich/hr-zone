@@ -1,0 +1,122 @@
+.contact {
+  padding: 40px 0;
+
+  &__title {
+    font-family: @font-poppins;
+    font-weight: 600;
+    font-size: 50px;
+    color: @primary-color;
+    text-align: center;
+    margin-bottom: 0.35em;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    max-width: 696px;
+    margin: 0 auto;
+
+    input,
+    textarea {
+      color: @text-color;
+      border-radius: 10px;
+      border: 1px solid #d6dded;
+      padding: 24px 30px;
+      font-family: @font-inter;
+      font-weight: 400;
+      font-size: 20px;
+      background-color: transparent;
+
+      &::placeholder {
+        color: @secondary-color;
+      }
+    }
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+
+  &__label {
+    font-family: @font-poppins;
+    font-weight: 700;
+    font-size: 18px;
+    color: @primary-color;
+    padding-left: 5px;
+  }
+
+  &__button {
+    padding: 18px 20px;
+    border-radius: 25px;
+  }
+}
+
+.form-group-checkbox {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  width: 100%;
+
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  label {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-family: @font-inter;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 24px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 22px;
+      height: 22px;
+      border: 1px solid #d6dded;
+      border-radius: 4px;
+      background-color: white;
+      transition: all 0.2s ease;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 8px;
+      top: 4px;
+      width: 6px;
+      height: 11px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      opacity: 0;
+      transition: all 0.2s ease;
+    }
+  }
+
+  input[type="checkbox"]:checked + label:before {
+    background-color: @primary-color;
+    border-color: @primary-color;
+  }
+
+  input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+  }
+
+  &:hover label:before {
+    border-color: @primary-color;
+  }
+}

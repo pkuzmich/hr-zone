@@ -201,58 +201,29 @@
     </section>
     <section class="contact">
       <div class="container">
-        <h2>Napište nám</h2>
-        <form>
+        <h2 class="contact__title">Napište nám</h2>
+        <form class="contact__form">
           <div class="form-group">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" placeholder="vas@email.cz" />
+            <label for="email" class="form-group__label">E-mail</label>
+            <input type="email" id="email" placeholder="example@email.com" />
           </div>
           <div class="form-group">
-            <label for="message">Zpráva</label>
-            <textarea id="message" placeholder="Vaše zpráva..."></textarea>
+            <label for="name" class="form-group__label">Jméno</label>
+            <input type="text" id="name" placeholder="Celé jméno" />
           </div>
           <div class="form-group">
-            <label for="gdpr">Souhlas</label>
+            <label for="message" class="form-group__label">Zpráva</label>
+            <textarea id="message" placeholder="Napište nám" rows="7"></textarea>
+          </div>
+          <div class="form-group-checkbox">
             <input type="checkbox" id="gdpr" />
-            <span>Souhlasím s podmínkami GDPR</span>
+            <label for="gdpr"><span>Souhlasím s podmínkami GDPR</span></label>
           </div>
-          <button type="submit" class="btn-primary">Odeslat</button>
+          <button type="submit" class="btn-primary btn-primary--form">Odeslat</button>
         </form>
       </div>
     </section>
-    <footer>
-      <div class="container">
-        <div class="footer-links">
-          <div class="footer-column">
-            <h3>Kvalita webových stránek</h3>
-            <ul>
-              <li><a href="#">Ochrana údajů</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h3>Zdroj a provozovatel webstránky</h3>
-            <ul>
-              <li><a href="#">O nás</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h3>Tipy na komunikaci a povely</h3>
-            <ul>
-              <li><a href="#">Nápověda</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h3>Pravidlela používání služeb</h3>
-            <ul>
-              <li><a href="#">Podmínky užití</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="copyright">
-          <p>© 2025 HR Zóna. Všechna práva vyhrazena.</p>
-        </div>
-      </div>
-    </footer>
+    <footer>&nbsp;</footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
