@@ -34,7 +34,7 @@
   display: inline-block;
   background-color: @bg-color;
   color: @text-color;
-  padding: @spacing-sm @spacing-md;
+  padding: @spacing-sm;
   border-radius: @border-radius;
   text-decoration: none;
   font-family: @font-raleway;
@@ -44,6 +44,10 @@
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;
+
+  @media (min-width: @breakpoint-sm) {
+    padding: @spacing-sm @spacing-md;
+  }
 
   &:hover {
     background-color: @hover-color;
