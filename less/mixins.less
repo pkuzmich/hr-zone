@@ -1,0 +1,102 @@
+// Flexbox mixins
+.flex(@direction: row, @justify: flex-start, @align: stretch, @wrap: nowrap) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-items: @align;
+  flex-wrap: @wrap;
+}
+
+// Media query mixins
+.responsive(@breakpoint) when (@breakpoint = sm) {
+  @media (min-width: @breakpoint-sm) {
+    @content();
+  }
+}
+.responsive(@breakpoint) when (@breakpoint = md) {
+  @media (min-width: @breakpoint-md) {
+    @content();
+  }
+}
+.responsive(@breakpoint) when (@breakpoint = lg) {
+  @media (min-width: @breakpoint-lg) {
+    @content();
+  }
+}
+.responsive(@breakpoint) when (@breakpoint = xl) {
+  @media (min-width: @breakpoint-xl) {
+    @content();
+  }
+}
+
+// Button mixins
+.button(@bg-color, @text-color, @hover-color) {
+  display: inline-block;
+  background-color: @bg-color;
+  color: @text-color;
+  padding: @spacing-sm;
+  border-radius: @border-radius;
+  text-decoration: none;
+  font-family: @font-raleway;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: @breakpoint-sm) {
+    padding: @spacing-sm @spacing-md;
+  }
+
+  &:hover {
+    background-color: @hover-color;
+  }
+}
+
+// Container mixin
+.container() {
+  width: 100%;
+  max-width: calc(1230px + @spacing-md * 2);
+  margin: 0 auto;
+  padding: 0 @spacing-md;
+}
+
+.solid-effect() {
+  border-radius: @border-radius;
+  border-radius: 10px;
+  border: 1px solid @white-color;
+  background: linear-gradient(122deg, @white-color 0%, #fafdff 96.81%);
+}
+
+// Card styling
+.card() {
+  background-color: @light-text;
+  border-radius: @border-radius-lg;
+  box-shadow: @shadow-sm;
+  padding: @spacing-lg;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: @shadow-md;
+  }
+}
+
+// Wave decoration
+.wave-decoration() {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-image: url("../images/wave.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

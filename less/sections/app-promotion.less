@@ -1,0 +1,90 @@
+.app-promotion {
+  padding: 55px 0;
+  color: @white-color;
+
+  &__container {
+    background-color: @primary-color;
+    display: flex;
+    flex-direction: column;
+    // gap: 3.75rem;
+    gap: 2rem;
+    padding: @spacing-md @spacing-lg;
+    border-radius: @border-radius;
+
+    @media (min-width: @breakpoint-sm) {
+      flex-direction: row;
+    }
+  }
+}
+
+.app-image {
+  flex-shrink: 0;
+  margin-top: -4rem;
+  // margin-bottom: -5.5rem;
+  display: grid;
+  place-items: center;
+
+  @media (min-width: @breakpoint-sm) {
+    flex: 1 0 30%;
+    margin-bottom: -3rem;
+  }
+
+  @media (min-width: @breakpoint-md) {
+    margin-bottom: -3.5rem;
+  }
+  @media (min-width: @breakpoint-lg) {
+    margin-bottom: -4rem;
+  }
+  @media (min-width: @breakpoint-xl) {
+    margin-bottom: -5.5rem;
+  }
+}
+
+.app-info {
+  @media (min-width: @breakpoint-sm) {
+    padding: 34px 0;
+  }
+
+  @media (min-width: @breakpoint-xl) {
+    padding-right: 130px;
+  }
+
+  &__title {
+    font-size: 22px;
+    font-family: @font-raleway;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+
+    @media (min-width: @breakpoint-md) {
+      font-size: 30px;
+    }
+    @media (min-width: @breakpoint-lg) {
+      font-size: 40px;
+    }
+    @media (min-width: @breakpoint-xl) {
+      font-size: 50px;
+      margin-bottom: 0.1em;
+    }
+  }
+
+  &__description {
+    font-size: 16px;
+
+    @media (min-width: @breakpoint-md) {
+      font-size: 18px;
+    }
+    @media (min-width: @breakpoint-lg) {
+      font-size: 20px;
+    }
+    @media (min-width: @breakpoint-xl) {
+      font-size: 25px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 2rem;
+    // margin-top: 3.5rem;
+    margin-top: 2rem;
+  }
+}
