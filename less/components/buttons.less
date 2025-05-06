@@ -4,15 +4,32 @@
   .button(@primary-color, @white-color, @pink-color);
 
   &--large {
-    padding: @spacing-md @spacing-lg;
-    width: 210px;
+    padding: @spacing-sm @spacing-md;
+
+    @media (min-width: @breakpoint-lg) {
+      width: 210px;
+      padding: @spacing-md @spacing-lg;
+    }
   }
 
   &--form {
-    padding: 18px 20px;
     border-radius: 26px;
-    width: 422px;
-    height: 62px;
+    padding: 12px 16px;
+    min-width: 150px;
+
+    @media (min-width: @breakpoint-md) {
+      width: 250px;
+      height: 50px;
+      padding: 14px 18px;
+    }
+    @media (min-width: @breakpoint-lg) {
+      padding: 18px 20px;
+      width: 300px;
+    }
+    @media (min-width: @breakpoint-xl) {
+      width: 422px;
+      height: 62px;
+    }
   }
 }
 
@@ -23,6 +40,21 @@
 
 .btn-pink {
   .button(@pink-color, @white-color, @primary-color);
-  padding: 18px 20px;
+  padding: 12px 16px;
   border-radius: 26px;
+  min-width: 150px;
+
+  @media (min-width: @breakpoint-md) {
+    width: 250px;
+    height: 50px;
+    padding: 14px 18px;
+  }
+  @media (min-width: @breakpoint-lg) {
+    padding: 18px 20px;
+    width: 300px;
+  }
+  @media (min-width: @breakpoint-xl) {
+    width: 422px;
+    height: 62px;
+  }
 }

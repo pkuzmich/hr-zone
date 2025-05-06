@@ -8,10 +8,20 @@
   &__title {
     font-family: @font-poppins;
     font-weight: 600;
-    font-size: 50px;
+    font-size: 22px;
     color: @primary-color;
     text-align: center;
     margin-bottom: 0.35em;
+
+    @media (min-width: @breakpoint-md) {
+      font-size: 30px;
+    }
+    @media (min-width: @breakpoint-lg) {
+      font-size: 40px;
+    }
+    @media (min-width: @breakpoint-xl) {
+      font-size: 50px;
+    }
   }
 
   &__form {
@@ -27,11 +37,20 @@
       color: @text-color;
       border-radius: 10px;
       border: 1px solid #d6dded;
-      padding: 24px 30px;
+      padding: 16px 20px;
       font-family: @font-inter;
       font-weight: 400;
-      font-size: 20px;
+      font-size: 16px;
       background-color: transparent;
+
+      @media (min-width: @breakpoint-md) {
+        font-size: 18px;
+        padding: 18px 22px;
+      }
+      @media (min-width: @breakpoint-lg) {
+        font-size: 20px;
+        padding: 24px 30px;
+      }
 
       &::placeholder {
         color: @secondary-color;
@@ -49,14 +68,16 @@
   &__label {
     font-family: @font-poppins;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     color: @primary-color;
     padding-left: 5px;
-  }
 
-  &__button {
-    padding: 18px 20px;
-    border-radius: 25px;
+    @media (min-width: @breakpoint-md) {
+      font-size: 17px;
+    }
+    @media (min-width: @breakpoint-lg) {
+      font-size: 18px;
+    }
   }
 }
 
@@ -129,5 +150,15 @@
   background: url("../images/contact-bgr.png") no-repeat bottom center;
   background-size: auto;
   background-size: cover;
-  height: 670px;
+  height: 370px;
+
+  @media (min-width: @breakpoint-md) {
+    height: 470px;
+  }
+  @media (min-width: @breakpoint-lg) {
+    height: 570px;
+  }
+  @media (min-width: @breakpoint-xl) {
+    height: 670px;
+  }
 }

@@ -7,10 +7,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 7.5rem;
 
-    @media (min-width: @breakpoint-sm) {
+    @media (min-width: @breakpoint-md) {
       flex-direction: row;
+      gap: 3rem;
+    }
+    @media (min-width: @breakpoint-lg) {
+      gap: 5rem;
+    }
+    @media (min-width: @breakpoint-xl) {
+      gap: 7.5rem;
     }
   }
 }
@@ -42,22 +48,43 @@
 }
 
 .circle-decoration {
-  flex: 1 0 37%;
-  position: relative;
-  width: 450px;
-  height: 475px;
-  background: url("../images/circle-decoration.png") no-repeat center left;
-  background-size: contain;
+  @media (min-width: @breakpoint-md) {
+    flex: 1 0 37%;
+    position: relative;
+    width: 450px;
+    height: 475px;
+    background: url("../images/circle-decoration.png") no-repeat center left;
+    background-size: contain;
+  }
 
   h2 {
+    text-align: center;
     color: @primary-color;
     font-weight: 500;
-    font-size: 45px;
-    position: absolute;
-    top: 50%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    width: 315px;
-    margin-bottom: 0;
+    font-size: 22px;
+
+    @media (min-width: @breakpoint-sm) {
+      font-size: 24px;
+    }
+
+    @media (min-width: @breakpoint-md) {
+      font-size: 26px;
+      text-align: left;
+      position: absolute;
+      top: 50%;
+      left: 60%;
+      transform: translate(-50%, -50%);
+      width: 250px;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: @breakpoint-lg) {
+      font-size: 30px;
+      width: 315px;
+    }
+
+    @media (min-width: @breakpoint-xl) {
+      font-size: 45px;
+    }
   }
 }

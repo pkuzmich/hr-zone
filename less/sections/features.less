@@ -7,11 +7,21 @@
 
   &__title {
     font-family: @font-poppins;
-    font-size: 38px;
+    font-size: 22px;
     font-weight: 500;
     color: @primary-color;
     margin-bottom: 1.2em;
     padding-left: 1.5rem;
+
+    @media (min-width: @breakpoint-md) {
+      font-size: 24px;
+    }
+    @media (min-width: @breakpoint-lg) {
+      font-size: 30px;
+    }
+    @media (min-width: @breakpoint-xl) {
+      font-size: 38px;
+    }
   }
 }
 
@@ -52,8 +62,12 @@
   &__title {
     color: @primary-color;
     font-family: @font-poppins;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
+
+    @media (min-width: @breakpoint-md) {
+      font-size: 20px;
+    }
   }
 
   &__description {
