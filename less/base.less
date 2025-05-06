@@ -1,0 +1,74 @@
+/* Base styles for HR Zone */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: @font-size-base;
+  scroll-behavior: smooth;
+  background-color: @bg-light;
+}
+
+body {
+  font-family: @font-inter;
+  color: @text-color;
+  line-height: 1.6;
+  background-color: @bg-light;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: @font-poppins;
+  margin-bottom: @spacing-md;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: @font-size-xxl;
+}
+
+h2 {
+  margin-bottom: @spacing-lg;
+}
+
+h3 {
+  font-size: @font-size-lg;
+}
+
+p {
+  margin-bottom: @spacing-md;
+}
+
+a {
+  font-family: @font-inter;
+  color: @text-color;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  .container();
+}
+
+.background-container {
+  background: url("../images/wave.svg") no-repeat top right;
+  background-size: 65%;
+}
