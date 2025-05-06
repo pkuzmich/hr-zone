@@ -62,48 +62,4 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     })
   })
-
-  // Form validation
-  const contactForm = document.querySelector('.contact form')
-  if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
-      e.preventDefault()
-
-      const email = document.getElementById('email')
-      const message = document.getElementById('message')
-      const gdpr = document.getElementById('gdpr')
-      let isValid = true
-
-      // Simple email validation
-      if (!email.value || !email.value.includes('@')) {
-        email.classList.add('error')
-        isValid = false
-      } else {
-        email.classList.remove('error')
-      }
-
-      // Check if message is not empty
-      if (!message.value.trim()) {
-        message.classList.add('error')
-        isValid = false
-      } else {
-        message.classList.remove('error')
-      }
-
-      // Check GDPR consent
-      if (gdpr && !gdpr.checked) {
-        gdpr.parentElement.classList.add('error')
-        isValid = false
-      } else if (gdpr) {
-        gdpr.parentElement.classList.remove('error')
-      }
-
-      if (isValid) {
-        // Here you would normally send the form data to the server
-        // For now, just show a success message
-        alert('Zpráva byla úspěšně odeslána!')
-        contactForm.reset()
-      }
-    })
-  }
 }) 
